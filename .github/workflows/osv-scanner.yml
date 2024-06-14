@@ -79,7 +79,7 @@ jobs:
       - name: Run OSV-Scanner
         id: osv-scan
         run: |
-          /usr/local/bin/osv-scanner --lockfile=pubspec.lock --format=json > osv-scan-results.json
+          /usr/local/bin/osv-scanner --lockfile=pubspec.yaml --format=json > osv-scan-results.json
         continue-on-error: true
         
       - name: Upload OSV-Scanner results
