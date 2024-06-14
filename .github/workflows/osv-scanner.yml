@@ -14,10 +14,10 @@ on:
     - cron: '16 5 * * 5'
   push:
     branches:
-      - master
+      - main
   pull_request:
     branches:
-      - master
+      - main
       
 permissions:
   security-events: write
